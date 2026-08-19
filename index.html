@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f8f1df">
+<title>Prashanth Kumar & Soumya | Wedding Invitation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f8f1df;
+  --paper:#fffaf0;
+  --gold:#a67522;
+  --gold-soft:#c9a45b;
+  --brown:#4a2d18;
+  --muted:#765f45;
+  --line:rgba(166,117,34,.18);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  color:var(--brown);
+  font-family:"DM Sans",sans-serif;
+  background:
+    radial-gradient(circle at 10% 5%,rgba(214,180,105,.16),transparent 30%),
+    radial-gradient(circle at 90% 95%,rgba(214,180,105,.14),transparent 32%),
+    linear-gradient(180deg,#faf4e5 0%,#f7efdc 48%,#fbf5e6 100%);
+}
+body:before{
+  content:"";
+  position:fixed;inset:0;pointer-events:none;opacity:.13;
+  background-image:radial-gradient(rgba(100,70,30,.18) .5px,transparent .5px);
+  background-size:14px 14px;
+}
+.page{
+  width:min(900px,100%);
+  margin:auto;
+  padding:12px 12px 70px;
+}
+.site{
+  overflow:hidden;
+  border:1px solid rgba(166,117,34,.20);
+  border-radius:28px;
+  background:rgba(255,250,240,.78);
+  box-shadow:0 24px 70px rgba(70,42,15,.12);
+}
+.hero{
+  padding:12px;
+  background:transparent;
+}
+.hero img{
+  display:block;
+  width:100%;
+  height:auto;
+  border-radius:20px;
+}
+.section{
+  padding:42px 24px;
+  text-align:center;
+  border-top:1px solid var(--line);
+}
+.ornament{
+  color:var(--gold);
+  font-family:"Cormorant Garamond",serif;
+  font-size:18px;
+  letter-spacing:6px;
+}
+.heading{
+  margin:8px 0 0;
+  color:#754b16;
+  font-family:"Cormorant Garamond",serif;
+  font-size:18px;
+  font-weight:700;
+  letter-spacing:3px;
+  text-transform:uppercase;
+}
+.names{
+  margin:12px 0 0;
+  color:#6f4313;
+  font-family:"Cormorant Garamond",serif;
+  font-size:clamp(42px,8vw,68px);
+  line-height:.92;
+  font-weight:600;
+}
+.names span{
+  display:block;
+  margin:7px 0;
+  color:var(--gold);
+  font-size:25px;
+  font-style:italic;
+  line-height:1;
+}
+.intro{
+  max-width:620px;
+  margin:16px auto 0;
+  color:var(--muted);
+  font-family:"Cormorant Garamond",serif;
+  font-size:24px;
+  line-height:1.2;
+}
+.details{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  max-width:720px;
+  margin:24px auto 0;
+}
+.detail{
+  padding:12px 18px;
+  border-right:1px solid var(--line);
+}
+.detail:last-child{border-right:0}
+.label{
+  color:var(--gold);
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:2px;
+}
+.value{
+  margin-top:7px;
+  color:#4b2c16;
+  font-family:"Cormorant Garamond",serif;
+  font-size:23px;
+  line-height:1.08;
+  font-weight:700;
+}
+.venue-name{
+  margin:12px auto 4px;
+  color:#704514;
+  font-family:"Cormorant Garamond",serif;
+  font-size:32px;
+  line-height:1;
+  font-weight:700;
+}
+.venue-place{
+  color:var(--muted);
+  font-family:"Cormorant Garamond",serif;
+  font-size:21px;
+  line-height:1.2;
+}
+.map{
+  display:inline-block;
+  margin-top:17px;
+  padding:11px 20px;
+  border:1px solid rgba(166,117,34,.55);
+  border-radius:999px;
+  color:#704514;
+  text-decoration:none;
+  font-size:13px;
+  font-weight:600;
+  background:rgba(255,250,240,.58);
+}
+.closing{
+  max-width:650px;
+  margin:auto;
+  color:#4b2c16;
+  font-family:"Cormorant Garamond",serif;
+  font-size:27px;
+  line-height:1.16;
+}
+.closing em{color:#8b5c18}
+.footer{
+  padding:28px 20px 34px;
+  text-align:center;
+  border-top:1px solid var(--line);
+}
+.footer-small{
+  color:var(--gold);
+  font-family:"Cormorant Garamond",serif;
+  font-size:16px;
+  letter-spacing:3px;
+}
+.footer-names{
+  margin-top:5px;
+  color:#704514;
+  font-family:"Cormorant Garamond",serif;
+  font-size:26px;
+  font-weight:700;
+}
+@media(max-width:600px){
+  .page{padding:5px 5px 55px}
+  .site{border-radius:18px}
+  .hero{padding:6px}
+  .hero img{border-radius:13px}
+  .section{padding:34px 16px}
+  .details{grid-template-columns:1fr;max-width:360px}
+  .detail{padding:13px;border-right:0;border-bottom:1px solid var(--line)}
+  .detail:last-child{border-bottom:0}
+  .value{font-size:21px}
+  .venue-name{font-size:28px}
+  .intro{font-size:22px}
+  .closing{font-size:24px}
+}
+</style>
+</head>
+<body>
+<div class="page">
+<main class="site">
+
+<section class="hero">
+  <img src="invitation.png" alt="Prashanth Kumar and Soumya wedding invitation">
+</section>
+
+<section class="section">
+  <div class="ornament">✦ ❖ ✦</div>
+  <div class="heading">Wedding Invitation</div>
+  <div class="names">
+    Prashanth Kumar
+    <span>with</span>
+    Soumya
+  </div>
+  <div class="intro">
+    We request the honor of your presence and blessings on our special day.
+  </div>
+</section>
+
+<section class="section">
+  <div class="ornament">✦</div>
+  <div class="heading">Save the Date</div>
+  <div class="details">
+    <div class="detail">
+      <div class="label">DATE</div>
+      <div class="value">Sunday<br>24 August 2025</div>
+    </div>
+    <div class="detail">
+      <div class="label">MUHURTHAM</div>
+      <div class="value">10:56 AM</div>
+    </div>
+    <div class="detail">
+      <div class="label">RECEPTION</div>
+      <div class="value">6:00 PM<br>Onwards</div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="ornament">✦</div>
+  <div class="heading">Venue</div>
+  <div class="venue-name">Sree Convention</div>
+  <div class="venue-place">
+    Kompally, Outhbullapur,<br>
+    Hyderabad, Telangana 500014
+  </div>
+  <a class="map" href="https://maps.app.goo.gl/bjKfoaUMeik2ARqFA" target="_blank" rel="noopener">
+    📍 Open Location in Google Maps
+  </a>
+</section>
+
+<section class="section">
+  <div class="closing">
+    Your gracious presence and blessings will make this beautiful occasion
+    <em>truly memorable.</em> 🙏
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-small">With Best Compliments</div>
+  <div class="footer-names">Karamala &amp; Mohan Raju Families</div>
+</footer>
+
+</main>
+</div>
+</body>
+</html>
